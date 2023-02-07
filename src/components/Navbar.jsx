@@ -33,7 +33,7 @@ const Navbar = () => {
       </Link>
       <Link to="/linechart">
         <span className="nav-item">
-          <FontAwesomeIcon icon={faChartLine} /> Linechart(Non-Dynamic)
+          <FontAwesomeIcon icon={faChartLine} /> Linechart(Static)
         </span>
       </Link>
     </nav>
