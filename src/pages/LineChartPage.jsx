@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar";
 import LineChart from "../Charts/LineChart";
-import Footer from "../components/Footer";
 
 const LineChartPage = () => {
   return (
@@ -10,7 +9,6 @@ const LineChartPage = () => {
         <h2>Line Chart using Static Data</h2>
         <LineChart />
       </section>
-      <Footer></Footer>
     </>
   );
 };
