@@ -85,7 +85,7 @@ const Delete = () => {
               No coin with name {coinName} found
             </div>
           )}
-          <button type="submit">Submit</button>
+          <button type="submit">Delete Coin</button>
           <Link to="/barchart">
             <p style={{ color: "#1d1d1d", fontWeight: "bold", opacity: 0.7 }}>
               Click here to check the Chart

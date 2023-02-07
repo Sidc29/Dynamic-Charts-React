@@ -77,7 +77,7 @@ const Update = () => {
             value={data.coinPrice}
             placeholder="Enter ATH Price"
           />
-          <button type="submit">Submit</button>
+          <button type="submit">Add Coin</button>
           <Link to="/barchart">
             <p style={{ color: "#1d1d1d", fontWeight: "bold", opacity: 0.7 }}>
               Click here to check the Chart
