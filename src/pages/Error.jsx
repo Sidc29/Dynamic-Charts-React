@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { useTitle } from "../hooks/useTitle";
 
-const Error = () => {
+const Error = ({ title }) => {
+  useTitle(title);
+
   return (
     <>
       <section className="section">

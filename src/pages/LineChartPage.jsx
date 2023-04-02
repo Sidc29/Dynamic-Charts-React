@@ -1,7 +1,10 @@
 import Navbar from "../components/Navbar";
 import LineChart from "../Charts/LineChart";
+import { useTitle } from "../hooks/useTitle";
 
-const LineChartPage = () => {
+const LineChartPage = ({ title }) => {
+  useTitle(title);
+
   return (
     <>
       <Navbar />

@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { useTitle } from "../hooks/useTitle";
 import _ from "lodash";
 import Axios from "axios";
 
 import "./UpdateChart.css";
 
-const Delete = () => {
+const Delete = ({ title }) => {
   const [isSuccess, setSuccess] = useState(false);
   const [isError, setError] = useState(false);
-
   const [coinName, setCoinName] = useState("");
+
+  useTitle(title);
 
   const handleChange = (event) => {
     const { value } = event.target;

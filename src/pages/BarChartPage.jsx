@@ -1,7 +1,9 @@
 import BarChart from "../Charts/BarChart";
 import Navbar from "../components/Navbar";
+import { useTitle } from "../hooks/useTitle";
 
-const BarChartPage = () => {
+const BarChartPage = ({ title }) => {
+  useTitle(title);
   return (
     <>
       <Navbar />

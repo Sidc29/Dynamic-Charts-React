@@ -10,12 +10,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="update" element={<AddCoinData />} />
-        <Route path="delete" element={<DeleteCoin />} />
-        <Route path="barchart" element={<BarChartPage />} />
-        <Route path="linechart" element={<LineChartPage />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/" element={<Home title="Documentation" />}></Route>
+        <Route path="update" element={<AddCoinData title="Add coin" />} />
+        <Route path="delete" element={<DeleteCoin title="Delete coin" />} />
+        <Route path="barchart" element={<BarChartPage title="Bar Chart" />} />
+        <Route
+          path="linechart"
+          element={<LineChartPage title="Line Chart" />}
+        />
+        <Route path="*" element={<Error title="Page Not Found" />} />
       </Routes>
     </BrowserRouter>
   );

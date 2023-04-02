@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTitle } from "../hooks/useTitle";
 import _ from "lodash";
 import Navbar from "../components/Navbar";
 import Axios from "axios";
 
 import "./UpdateChart.css";
 
-const Update = () => {
+const Update = ({ title }) => {
   const [isSuccess, setSuccess] = useState(false);
 
   const url = "https://crypto-coins-ath.onrender.com/coin-data";
 
+  useTitle(title);
+
   const [data, setData] = useState({
     coinName: "",
-    coinPrice: ""
+    coinPrice: "",
   });
 
   const handleChange = (event) => {
@@ -31,7 +34,7 @@ const Update = () => {
     }
     Axios.post(url, {
       coin_name: data.coinName,
-      ath_price: data.coinPrice
+      ath_price: data.coinPrice,
     }).then((res) => {
       if (res.status === 200) {
         setSuccess(true);

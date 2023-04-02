@@ -1,7 +1,10 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useTitle } from "../hooks/useTitle";
 
-const Home = () => {
+const Home = ({ title }) => {
+  useTitle(title);
+
   return (
     <>
       <Navbar />
