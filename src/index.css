@@ -102,6 +102,9 @@ ul {
 .nav-item:hover {
   opacity: 1;
 }
+.active {
+  opacity: 1;
+}
 
 .documentation p {
   opacity: 0.8;

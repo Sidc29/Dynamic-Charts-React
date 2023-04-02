@@ -68,10 +68,10 @@ const Home = () => {
               </span>
             </li>
             <li>
-              <li>
+              <ul>
                 <strong>Request Body:</strong> JSON object containing the coin
                 name and its all-time high price.
-              </li>
+              </ul>
               <strong>Response:</strong> Returns a JSON object confirming the
               addition of the new coin data.
             </li>

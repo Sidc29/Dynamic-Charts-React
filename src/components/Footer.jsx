@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <div class="footer">
+    <div className="footer">
       <center>
         <p>
-          <span class="footerText">
-            <span class="footerName">© Made by Siddharth</span>
+          <span className="footerText">
+            <span className="footerName">© Made by Siddharth</span>
           </span>
         </p>
       </center>
